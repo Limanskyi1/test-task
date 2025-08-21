@@ -1,0 +1,10 @@
+:root {
+    --c-white: #fff;
+    --c-red: #ff0960;
+    --c-text: #90a2bd;
+    --c-text2: #a9b8cd; 
+    --bg-footer: #131519;
+    --bg-modal-overlay: rgba(0, 0, 0, 0.8);
+    --bg-modal-content: #12202b;
+    --header-height: clamp(56px,7.8vw,100px);
+}

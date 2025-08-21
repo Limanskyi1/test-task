@@ -1,0 +1,14 @@
+.btn__prime {
+  border-radius: 8px;
+  padding: clamp(10px,1.1vw,12px) 14px;
+  backdrop-filter: blur(34px);
+  background: rgba(255, 255, 255, 0.1);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: var(--c-white);
+  transition: opacity .3s ease-in;
+}
+.btn__prime:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,32 @@
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px,2.9vw,40px);
+}
+.header__logo img:first-of-type {
+  max-width: clamp(41px,5.05vw,61px);
+}
+.header__logo img:last-of-type {
+  max-width: clamp(62px,7.4vw,78px);
+}
+.header__logo-divider {
+  height: clamp(24px,2.85vw,33px);
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.header__button {
+  max-width: clamp(80px,10vw,120px);
+  width: 100%;
+}
