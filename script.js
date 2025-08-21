@@ -2,12 +2,19 @@ const CONFIG = {
   spinsCount: 4,
   animationDuration: 6,
   sectors: [0, 90, 180, 270],
+   discounts: {
+    0: "100%",
+    90: "100%",
+    180: "275%",
+    270: "100%",
+  },
 };
 
 const wheel = document.querySelector(".wheel__inner img");
 const wheelButton = document.querySelector(".wheel__button");
 const modal = document.getElementById("modal");
 const modalClose = modal.querySelector(".modal__close");
+const modalDiscount = modal.querySelector(".modal__accent");
 
 let currentDeg = 0;
 
@@ -27,6 +34,8 @@ const handleClickWheelButton = () => {
   wheel.style.transform = `rotate(${getRandomDeg()}deg)`;
   wheel.addEventListener("transitionend", () => {
     wheelButton.disabled = false;
+    const discount = CONFIG.discounts[currentDeg % 360];
+    modalDiscount.textContent = discount;
     showModal();
   });
 };
